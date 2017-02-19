@@ -18,11 +18,13 @@
 @import 'bootstrap';
 
 
-
+// typography styles //
 h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
 }
 
+
+//background gradient//
 .navbar, .home-callout {
      /* Gradient provided by @_ighosh at uiGradients.com */
     background: #43cea2; /* fallback for old browsers */
@@ -31,10 +33,12 @@ h1, h2, h3 {
 
 }
 
+//navstyles//
 .navbar {
     border: none;
 }
 
+// home page styles
 .home-callout {
     margin-top: -20px;
     padding-top: 50px;
@@ -42,20 +46,13 @@ h1, h2, h3 {
     color: white;
 }
 
-.navbar-default .navbar-brand {
-    color: white;
-}
-
+//navbar styles
+.navbar-default .navbar-brand, 
 .navbar-default .navbar-nav > li > a {
     color: white;
-}
-
-.navbar-default .navbar-brand:hover {
+    &:hover {
     color: white;
     opacity: 0.75;
+    }
 }
 
-.navbar-default .navbar-nav > li > a:hover {
-    color: white;
-    opacity: 0.75;
-}
