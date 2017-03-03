@@ -35,7 +35,7 @@ gem 'bootstrap-sass', '3.3.7'
 gem 'font-awesome-sass', '4.6.2'
 
 # Use Hirb for better database table display in console
-gem 'hirb', '0.7.3'
+gem 'hirb', '0.7.3' # Use Hirb.enable after rails console, then use contact.all to get a list of all contacts
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
