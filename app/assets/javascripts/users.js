@@ -2,7 +2,7 @@
 //Document ready.
 $(document).on('turbolinks:load', function(){
   var theForm = $('#pro_form');
-  var submitBtn = $('#form-submit-btn');
+  var submitBtn = $('#form-signup-btn');
  
   //Set Stripe public key.
   Stripe.setPublishableKey( $('meta[name="stripe-key"]').attr('content') );
@@ -38,9 +38,9 @@ $(document).on('turbolinks:load', function(){
     error = true;
     alert('The Expiration date appears to be invalid')
   }
-    submitBtn.prop('disabled', false).val("Sign Up")
   if (error) {
     //if there are card errors don't send to stripe
+    submitBtn.prop('disabled', false).val("Sign Up")
   }
     else {
       //Send the card info to stripe.
